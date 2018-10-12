@@ -15,14 +15,14 @@ namespace Lab2_AHBCGrandCircus
             {
                 Console.Write("Enter Length: ");
                 string length = Console.ReadLine();
-                int parsedLength = int.Parse(length);
+                decimal parsedLength = decimal.Parse(length);
 
                 Console.Write("Enter Width: ");
                 string width = Console.ReadLine();
-                int parsedWidth = int.Parse(width);
+                decimal parsedWidth = decimal.Parse(width);
 
-                int calculatedArea = parsedLength * parsedWidth;
-                int calculatedPerimeter = (parsedLength * 2) + (parsedWidth * 2);
+                decimal calculatedArea = parsedLength * parsedWidth;
+                decimal calculatedPerimeter = (parsedLength * 2) + (parsedWidth * 2);
 
                 Console.WriteLine($"Area: {calculatedArea}");
                 Console.WriteLine($"Perimeter: {calculatedPerimeter}");
